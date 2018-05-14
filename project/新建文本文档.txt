@@ -1,0 +1,6 @@
+    If rowEnd - rowBeg >= 6 Then
+        rgBeg.Select
+        Range(rgBeg.Offset(6 + 3, -1), rgBeg.Offset(rowEnd - rowBeg - 1, 30)).Select
+        Selection.Delete Shift:=xlUp
+    End If
+    
